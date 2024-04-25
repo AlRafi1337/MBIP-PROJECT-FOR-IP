@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <style>
+    body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(mbipbg.png);
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            
+        }
+        h2 {
+            text-align: center;
+            color: #009688;
+        }
+        form {
+            padding: 20px;
+            width: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            background-color: #E0F2F1;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #00695C;
+        }
+        input[type="text"], input[type="file"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #00695C;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #06a08e;
+        }
+    .menu-item:hover {
+      background-color: #06a08e;
+    }
+    input[type="text"]{
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            text-align: center;
+            border-radius: 4px;
+            max-width: 400px;
+        }
+
+        button[type="submit"] {
+          background-color: #004D40;
+          width: calc(100% - 16px);
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            text-align: center;
+            border-radius: 4px;
+            max-width: 400px;
+          
+        }
+        menu {
+          background-color: #004D40;
+          width: calc(100% - 16px);
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            text-align: center;
+            border-radius: 4px;
+            max-width: 400px;
+          
+        }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo_baru_web.gif" width="75" height="75">
+  <h1>MBIP Project</h1>
+</div>
+<div class="input">
+  <form action="MainScreen.html" method="get">
+    <label for="name">username:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="name">password:</label>
+    <input type="text" id="name" name="name" required>
+  
+</div>
+<div class="menu">
+  <button type="submit">Login</button><br>
+</form>
+  <p>if you don't have account:</p>
+  <a href="UserManagement.html"  >Signup</a>
+</div>
+
+</body>
+</html>

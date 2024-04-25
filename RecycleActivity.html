@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycle Activity Form</title>
+    <style>
+        body {
+          font-family: 'Arial', sans-serif;
+            background-image: url(mbipbg.png);
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            color: #009688;
+        }
+        form {
+            padding: 20px;
+            width: 300px;
+            margin: 30px auto;
+            border-radius: 8px;
+            
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #004D40;
+        }
+        input[type="text"], input[type="file"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #00695C;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #00796B;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Recycle Activity Form</h2>
+    <form action="GetAnalysis.html" method="get">
+        <!-- Participant Information -->
+        <label for="participantName">Participant Name:</label>
+        <input type="text" id="participantName" name="participantName" required>
+
+        <label for="participantID">Participant Identification Card:</label>
+        <input type="text" id="participantID" name="participantID" required>
+
+        <label for="rmJanuaryJune">Accumulated amount in RM or Collect Point Value for January-June:</label>
+        <input type="text" id="rmJanuaryJune" name="rmJanuaryJune" required>
+
+        <label for="stateRecycling">State recycling practices in your home:</label>
+        <textarea id="stateRecycling" name="stateRecycling" rows="4" required></textarea>
+
+        <label for="recyclingMethods">Methods you use for recycling practices in your home:</label>
+        <textarea id="recyclingMethods" name="recyclingMethods" rows="4" required></textarea>
+
+        <!-- Upload Evidence (Optional) -->
+        <label for="uploadEvidence">Upload Evidence (Optional):</label>
+        <input type="file" id="uploadEvidence" name="uploadEvidence">
+
+        <!-- Get Analysis Button -->
+        <button type="submit">Get Analysis</button>
+    </form>
+
+    <!-- Add any additional content or scripts here -->
+</body>
+</html>

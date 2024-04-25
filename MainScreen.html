@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBIP Project Dashboard</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+            background-image: url(mbipbg2.png);
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+      
+    }
+    .header {
+      background-color: rgba(204, 248, 243, 100);
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .menu-item {
+      background-color: white;
+      color: #004D40;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none; /* Add this line to remove the default underline for links */
+      display: block; /* Ensure the whole button is clickable */
+    }
+    .menu-item:hover {
+      background-color: #ccf8f3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo_baru_web.gif" width="75" height="75">
+  <h1>MBIP Project</h1>
+</div>
+
+<div class="menu">
+  <a href= "waterAnalysis.html" class="menu-item">Water Consumption Analysis</a>
+  <a href="ElectricityConsumption.html" class="menu-item">Electricity Consumption Analysis</a>
+  <a href="RecycleActivity.html" class="menu-item">Recycling Analysis</a>
+</div>
+
+</body>
+</html>
